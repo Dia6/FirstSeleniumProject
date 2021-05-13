@@ -27,7 +27,7 @@ public class WishListTest {
         driver.manage().window().maximize();
         driver.get("http://testfasttrackit.info/selenium-test/");
         driver.findElement(By.cssSelector(".skip-account .label")).click();
-        driver.findElement(By.cssSelector("#header-account > div > ul > li.last > a")).click();
+        driver.findElement(By.cssSelector("#header-account div .last")).click();
         driver.findElement(By.id("email")).sendKeys("ginny@yahoo.com");
         driver.findElement(By.id("pass")).sendKeys("12violet");
         driver.findElement(By.id("send2")).click();

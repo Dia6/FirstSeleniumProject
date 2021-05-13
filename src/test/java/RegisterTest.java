@@ -37,7 +37,7 @@ public class RegisterTest {
         driver.findElement(By.id("email_address")).sendKeys("ginny@yahoo.com");
         driver.findElement(By.id("password")).sendKeys("12violet");
         driver.findElement(By.id("confirmation")).sendKeys("12violet");
-        driver.findElement(By.cssSelector("#form-validate > div.buttons-set > button")).click();
+        driver.findElement(By.cssSelector(".buttons-set button")).click();
         WebElement welcomeText = driver.findElement(By.cssSelector(".error-msg"));
         Assert.assertEquals("There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.", welcomeText.getText());
         driver.quit();
